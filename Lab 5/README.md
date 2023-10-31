@@ -1,6 +1,6 @@
 # Observant Systems
 
-**NAMES OF COLLABORATORS HERE**
+**Amber Tsao (ct649), Aris Huang (th625), Julia Lin (jtl236), Sherri Lin (yl3658), Wayne Cheng (cc2796), Ifeng Wu (iw84)**
 
 
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
@@ -136,8 +136,14 @@ In an earlier version of this class students experimented with foundational comp
 * This can be as simple as the boat detector showen in a previous lecture from Nikolas Matelaro.
 * Try out different interaction outputs and inputs.
 
+**\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***  
+We attempted to utilize the MediaPipe model for tracking users' finger positions. Whenever users position their index finger within a specific area known as the capture box for a period of time, the system will print 'success' and capture a photo.
 
-**\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
+<img width="938" alt="Screenshot 2023-10-28 at 2 40 42 PM" src="https://github.com/cctsao2000/Interactive-Lab-Hub/assets/60999245/46de2403-9505-453a-87b3-97a272fe7c92">
+
+https://github.com/cctsao2000/Interactive-Lab-Hub/assets/60999245/36941372-15b3-45cb-84d5-2c93813d3a23
+
+
 
 ### Part C
 ### Test the interaction prototype
@@ -155,20 +161,41 @@ For example:
 1. How could change your interactive system to address this?
 1. Are there optimizations you can try to do on your sense-making algorithm.
 
+When the system successfully captures a photo, it will continue its detection process. Consequently, if a user's finger remains within the area for an extended period, the original photo may be overwritten by a new one. To address this, we can establish limits on the number of photos that can be taken within a specific time frame or generate non-duplicated file names. Thinking of someone who may want to use gestures to control the webcam and take a selfie, it might be useful to add the gesture-detecting function and take pictures when the user is doing a certain hand pose.
+
 ### Part D
 ### Characterize your own Observant system
 
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
-* What can you use X for?
+* What can you use X for? 
+    1. Learning sign language
+    2. Having fun
 * What is a good environment for X?
+    1. Sufficient ambient light
+    2. Do not have too many hands in the screen at the same time
+    3. Clear background
 * What is a bad environment for X?
+    1. Messy frame
+    2. Noisy background sound
 * When will X break?
+    1. When the web camera fails to detect the desired gestures given by the users.
 * When it breaks how will X break?
+    1. When it breaks X will just have no respond
 * What are other properties/behaviors of X?
+    1. Chosen music to be included in the X
+    2. Added new gestures in X
 * How does X feel?
+    1. innovative gesture game
+
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+
+[Observant System Video](https://drive.google.com/file/d/1CNNCR6goIrXYBSLaa-Zk1BvZ_r3QR-1M/view?usp=sharing)
+
+- Dark Environment
+- Too many hands in the screen --> causing noise
+- Latency (low FPS, causing the interaction/gesture detection to slow down or not detected)
 
 ### Part 2.
 
