@@ -186,7 +186,7 @@ Changing Color-> the color information will be sent to MQTT Explorer as shown be
 
 (A message from the previous TA, Ilan: I was not super careful with handling the loop so you may need to press more than once if the timing isn't quite right. Also, I haven't load-tested it so things might just immediately break when everyone pushes the button at once.)
 
-**\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***
+**\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***  
 [Video Demo: Change color across all devices through MQTT](https://drive.google.com/file/d/1eBdF5KNCynUMlMxGFN5zLP9-voar4Gzv/view?usp=sharing)
 
 
@@ -201,15 +201,14 @@ Find at least one class (more are okay) partner, and design a distributed applic
 This design utilizes camera to detect user hand pose for what number they would like to vote for, from 1 to 3. It is able to tally the total number of votes for each number. It is a useful system because it is more convenient for the user to be able to just use gesture to signal what number they would like to vote for, instead of having to press any buttons or type out their selection. The system is also able to tally up the results, so it is more convenient for those who need the total number of votes for each number.
 
 
-**\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
+**\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?  
 ![S__12877957](https://hackmd.io/_uploads/B1gTEN1Vp.jpg)
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 - Making sure the user interface (via the Terminal console) will showcase the synced results based on user's gesture in accurate, timely manner 
 
-**\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
+**\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.  
 [Video Demo: Voting System](https://drive.google.com/file/d/17zr7aMg4jYNKH2DIuwPHKrXbXjNUIgsC/view?usp=sharing
 )
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
-

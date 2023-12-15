@@ -10,7 +10,7 @@ trap cleanup TERM INT  # Set up signal handlers
 
 while :
 do
-    aplay -D hw:3,0 Dynamite.wav &
+    aplay -D hw:3,0 Peaceful_Mind.wav &
     APLAY_PID=$!  # Store the PID of the aplay process
     wait $APLAY_PID  # Wait for the aplay process to complete
 done
